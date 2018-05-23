@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -21,7 +22,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#myPage">ElectriCorp</a>
+      <a class="navbar-brand navbar-brand-name" href="#myPage">ElectriCorp</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -95,7 +96,7 @@
         <p></p>
       </div>
     </div>
-  </div><br>
+  </div>
 
   <div class="row text-center slideanim">
     <div class="col-sm-4">
@@ -143,7 +144,7 @@
         <p></p>
       </div>
     </div>
-    <br><br>
+    <br>
     <div class="row slideanim">
       <div class="col-sm-12 col-md-6 col-lg-4">
         <img src="../img/3chandeliers.jpg" alt="Chandelier Cleaning" width="300" height="300">
@@ -208,11 +209,27 @@
         <h4>"As a local realtor in the DFW metroplex for over 27 years I have had fantastic results in using ElectriCorp for electrical work needed to complete the sale of a home in repair request situation, always get great results and swift action."<br><br><br><span>Tres Holder, TAHS, SFR, ABR, AHWD, REMAX</span></h4>
       </div>
       <div class="item">
-        <h4>"Shawn and Gary are outstanding electricians. They can solve any problem <br><br><br><span>J. Davenport</span></h4>
+        <h4>"Shawn and Gary are outstanding electricians. They can solve any problem and are very professional<br><br><br><span>J. Davenport, Customer</span></h4>
       </div>
     </div>
 
+    <br>
+    <br>
+
+
     <!-- Left and right controls -->
+<!--
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a> -->
+  </div>
+
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
@@ -223,7 +240,9 @@
     </a>
   </div>
 
-
+<br>
+<br>
+<br>
 <!-- Container (Contact Section) -->
 <div id="contact" class="container-fluid bg-grey">
   <h2 class="text-center">CONTACT</h2>
@@ -269,7 +288,7 @@ $(document).ready(function(){
       // Store hash
       var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
+      // animate() method to add smooth page scroll
       // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
