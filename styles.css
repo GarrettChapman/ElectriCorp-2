@@ -66,9 +66,11 @@ h4 {
 .carousel-indicators li {
     border-color: gray;
 
+
 }
 .carousel-indicators li.active {
     background-color: gray;
+
 
 }
 .item h4 {
@@ -78,8 +80,7 @@ h4 {
     font-style: italic;
     margin: 70px 0;
     padding-bottom: 65px;
-    min-height: 200px;
-    max-height: 250px;
+    height: 230px;
 
 }
 .item span {
